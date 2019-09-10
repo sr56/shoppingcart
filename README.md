@@ -1,3 +1,4 @@
+
 # ShoppingCart
 ### ShoppingCart implementation 
 
@@ -35,3 +36,26 @@ The **ShopperService** just takes the next item from this list, if it satisfies 
 Finally the program prints the Shopping Cart and it's Content summary in the **Console / Log**  as  an **INFO**.
 
 
+**Compiling and Building the springboot jar**
+
+    mvn clean compile install
+
+    java -jar target/shoppingcart-0.0.1-SNAPSHOT.jar
+
+
+The program will generate the Store contents and print it out.
+Then the Shopping cart will be filled and the contents printed out.
+Finally a summary of Shoppingcart contents will be printed out. 
+All these happens into the Log file.
+
+***src/main/resources/application.properties***     
+ has the logging set to INFO
+
+     logging.level.root=INFO
+
+ To inspect the shopping cart selection process and the Shopping strategy logic, please set the logging level to DEBUG 
+
+    logging.level.root=DEBUG
+
+ 
+ 
